@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>A Collection of Page Transitions</title>
+        <meta name="description" content="A Collection of Page Transitions with CSS Animations" />
+        <meta name="keywords" content="page transition, css animation, website, effect, css3, jquery" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/animations.css" />
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400,700' rel='stylesheet' type='text/css'>
+		<noscript><link rel="stylesheet" type="text/css" href="css/noscript.css" /></noscript>
+                
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>	
+        <div class="container">
+                    <header class="clearfix">
+                        <span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+                        <h1>Horizontal Slide Out Menu</h1>
+                        <nav>
+                            <a href="http://tympanus.net/Blueprints/VerticalTimeline/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+                            <a href="http://tympanus.net/Blueprints/ProductGridLayout/" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a>
+                            <a href="http://tympanus.net/codrops/?p=15092" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+                            <a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+                        </nav>
+                        
+                    </header>	
+                    <div class="main">
+                        <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+                            <div class="cbp-hsinner">
+                                <ul class="cbp-hsmenu">
+                                    <li onclick="PageTransitions.nextPage(null, 0)"><a href="#">Home</a></li>
+                                    <li>
+                                        <a href="#">Products</a>
+                                        <ul class="cbp-hssubmenu cbp-hssub-rows">
+                                            <li><a href="#"><img src="images/7.png" alt="img07"/><span>Lovely Slurp</span></a></li>
+                                            <li><a href="#"><img src="images/8.png" alt="img08"/><span>Lemony Grappa</span></a></li>
+                                            <li><a href="#"><img src="images/9.png" alt="img09"/><span>Eggy Liquor</span></a></li>
+                                            <li><a href="#"><img src="images/10.png" alt="img10"/><span>Fresh Juice</span></a></li>
+                                            <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                                            <li><a href="#"><img src="images/2.png" alt="img02"/><span>Fine Spirit</span></a></li>
+                                            <li><a href="#"><img src="images/3.png" alt="img03"/><span>Heavenly Ale</span></a></li>
+                                            <li><a href="#"><img src="images/4.png" alt="img04"/><span>Juicy Lemonade</span></a></li>
+                                            <li><a href="#"><img src="images/5.png" alt="img05"/><span>Wise Whiskey</span></a></li>
+                                            <li><a href="#"><img src="images/6.png" alt="img06"/><span>Sweet Rum</span></a></li>
+                                            <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                                            <li><a href="#"><img src="images/2.png" alt="img02"/><span>Fine Spirit</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                        <ul class="cbp-hssubmenu">
+                                            <li><a href="#"><img src="images/10.png" alt="img10"/><span>Fresh Juice</span></a></li>
+                                            <li><a href="#"><img src="images/6.png" alt="img06"/><span>Sweet Rum</span></a></li>
+                                            <li><a href="#"><img src="images/9.png" alt="img09"/><span>Eggy Liquor</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="PageTransitions.nextPage(null, 3)"><a href="#">About Us</a></li>
+                                    <li onclick="PageTransitions.nextPage(null, 4)"><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+<!--        <div class="pt-triggers">
+            <button id="iterateEffects" class="pt-touch-button">Show next page transition</button>
+        </div>-->
+        <!-- /triggers -->
+
+        <div id="pt-main" class="pt-perspective">
+            <div class="pt-page pt-page-1"><h1><span>A collection of</span><strong>Page</strong> Transitions1</h1></div>
+            <div class="pt-page pt-page-2">Home</div>
+            <div class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> Transitions3</h1></div>
+            <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions4</h1></div>
+            <div class="pt-page pt-page-5">
+                <section id="ps-container" class="ps-container">
+		
+			<div class="ps-header">
+				<h1>Vertical Showcase Slider</h1>
+			</div><!-- /ps-header -->
+			
+			<div class="ps-contentwrapper">
+			
+				<div class="ps-content">
+					<h2>Bernhard</h2>
+					<span class="ps-price">£100</span>
+					<p>With restful springiness in the seat; prevents static sitting and provides enhanced seating comfort. Padded seat and back for enhanced seating comfort. Soft, hardwearing and easy care leather, which ages gracefully.</p>
+					<a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a>
+				</div>
+				
+				<div class="ps-content">
+					<h2>Tobias</h2>
+					<span class="ps-price">£65</span>
+					<p>For increased stability, re-tighten the screws about two weeks after assembly. Seat and back with restful flexibility; prevents a static sitting posture and enhances comfort.</p>
+					<a href="http://www.ikea.com/gb/en/catalog/products/90185320/#/20115038">Buy this item</a>
+				</div>
+				
+				<div class="ps-content">
+					<h2>Pöang</h2>
+					<span class="ps-price">£140</span>
+					<p>Frame made of layer-glued bent birch; a very strong and durable material. High back provides great support for your neck. Sheepskin has natural insulating properties, which make it feel warm and cosy to sit on. Extra cushions are available for variation and renewal.</p>
+					<a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a>
+				</div>
+				
+				<div class="ps-content">
+					<h2>Mellby</h2>
+					<span class="ps-price">£195</span>
+					<p>Easy to keep clean; removable, machine washable cover. Seat cushion with a top layer of memory foam; moulds to the precise contours of your body and regains its shape when you get up.</p>
+					<a href="http://www.ikea.com/gb/en/catalog/products/S99895000/#/S69894380">Buy this item</a>
+				</div>
+				
+				<div class="ps-content">
+					<h2>Torbjörn</h2>
+					<span class="ps-price">£30</span>
+					<p>Height adjustable for a comfortable sitting posture. The sloping seat gives a comfortable sitting position when leaning forwards.</p>
+					<a href="http://www.ikea.com/gb/en/catalog/products/70224756/">Buy this item</a>
+				</div>
+				
+			</div><!-- /ps-contentwrapper -->
+			
+			<div class="ps-slidewrapper">
+			
+				<div class="ps-slides">
+					<div style="background-image:url(images/s/1.jpg);"></div>
+					<div style="background-image:url(images/s/2.jpg);"></div>
+					<div style="background-image:url(images/s/3.jpg);"></div>
+					<div style="background-image:url(images/s/4.jpg);"></div>
+					<div style="background-image:url(images/s/5.jpg);"></div>
+				</div>
+				
+				<nav>
+					<a href="#" class="ps-prev" ></a>
+					<a href="#" class="ps-next" ></a>
+				</nav>
+				
+			</div><!-- /ps-slidewrapper -->
+			
+		</section><!-- /ps-container -->
+            </div>
+            <div class="pt-page pt-page-6">Contact Us</div>
+        </div>
+
+        <div class="pt-message">
+            <p>Your browser does not support CSS animations.</p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.dlmenu.js"></script>
+        <script src="js/pagetransitions.js"></script>
+
+
+        <script src="js/cbpHorizontalSlideOutMenu.min.js"></script>
+        <script>
+            var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+        </script>
+        
+        
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				Slider.init();
+			
+			});
+		</script>
+
+    </body>
+</html>
