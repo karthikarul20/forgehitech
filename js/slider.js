@@ -56,8 +56,8 @@ var Slider = (function() {
 			var configPrev = ( current > 0 ) ? $slides.eq( current - 1 ).css( 'background-image' ) : $slides.eq( itemsCount - 1 ).css( 'background-image' ),
 				configNext = ( current < itemsCount - 1 ) ? $slides.eq( current + 1 ).css( 'background-image' ) : $slides.eq( 0 ).css( 'background-image' );
 
-			$navprev.css( 'background-image', configPrev );
-			$navnext.css( 'background-image', configNext );
+			$navprev.css( 'background-image', "url(images/down.jpg)" );
+			$navnext.css( 'background-image', "url(images/up.jpg)" );
 
 		},
 		initEvents = function() {
@@ -121,12 +121,14 @@ var Slider = (function() {
 			// position the new item up or down the viewport depending on the direction
 			$newItem.css( {
 				top : ( dir === 'next' ) ? '-100%' : '100%',
-				zIndex : 999
+				zIndex : 999,
+				display : ""
 			} );
 			
 			$newSlide.css( {
 				top : ( dir === 'next' ) ? '100%' : '-100%',
-				zIndex : 999
+				zIndex : 999,
+				display : ""
 			} );
 
 			setTimeout( function() {
@@ -134,12 +136,14 @@ var Slider = (function() {
 				// move the current item and slide to the top or bottom depending on the direction 
 				$currentItem.addClass( 'ps-move' ).css( {
 					top : ( dir === 'next' ) ? '100%' : '-100%',
-					zIndex : 1
+					zIndex : 1,
+                                        display : "none"
 				} );
 
 				$currentSlide.addClass( 'ps-move' ).css( {
 					top : ( dir === 'next' ) ? '-100%' : '100%',
-					zIndex : 1
+					zIndex : 1,
+                                        display : "none"
 				} );
 
 				// move the new ones to the main viewport

@@ -34,23 +34,6 @@
 	position: absolute;
 }
 
-.ps-header {
-	top: 0px;
-	left: 0px;
-	height: 150px;
-	z-index: 1001;
-	background: #fff;
-}
-
-.ps-header h1 {
-	color: #ccc;
-	line-height: 150px;
-	margin: 0;
-	padding: 0 50px;
-	font-weight: 200;
-	font-size: 14px;
-	letter-spacing: 10px;
-}
 
 .ps-contentwrapper {
 	top: 0px;
@@ -156,7 +139,7 @@
 
 .ps-slidewrapper > nav > a {
 	width: 50%;
-	height: 100%;
+	height: 50%;
 	position: relative;
 	float: left;
 	box-shadow: inset 0 0 0 9999px rgba(207,227,206,0.8);
@@ -182,7 +165,7 @@
 .no-touch .ps-slidewrapper > nav > a:first-child:hover {
 	box-shadow: inset 0 0 0 9999px rgba(249,15,15,0.1);
 }
-
+/*
 .ps-slidewrapper > nav > a:after {
 	content: '';
 	position: absolute;
@@ -207,7 +190,7 @@
 	-ms-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 	margin: -80px 0 0 -50px;
-}
+}*/
 
 .ps-slides > div,
 .ps-slidewrapper > nav > a {
@@ -245,7 +228,7 @@
 
 	.js .ps-slides {
 		bottom: 320px;
-		top: 50px;
+/*		top: 50px;*/
 	}
 
 	.js .ps-slidewrapper > nav {
