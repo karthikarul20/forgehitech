@@ -53,7 +53,7 @@
 }
 
 .ps-contentwrapper {
-	top: 150px;
+	top: 0px;
 	bottom: 0px;
 	overflow: hidden;
 	z-index: 1000;
@@ -72,15 +72,15 @@
 	border-bottom: 1px solid #f2f2f2;
 	letter-spacing: 4px;
 	margin: 10px 0 30px;
-	text-align: right;
+/*	text-align: right;*/
 	font-weight: 700;
 }
 
-.ps-content p {
-	line-height: 26px;
+.ps-content div {
+/*	line-height: 26px;*/
 	font-size: 12px;
 	letter-spacing: 2px;
-	word-spacing: 10px;
+/*	word-spacing: 10px;*/
 	padding: 10px 15px;
 	font-weight: 400;
 	text-align: justify;
@@ -149,7 +149,7 @@
 .ps-slidewrapper > nav {
 	width: 100%;
 	height: 200px;
-	bottom: 0px;
+	/*bottom: 0px;*/
 	right: 0px;
 	z-index: 1000;
 }
@@ -227,7 +227,7 @@
 	transition: top 400ms ease-out;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1460px) {
 
 	.js .ps-container > div {
 		width: 100%;
