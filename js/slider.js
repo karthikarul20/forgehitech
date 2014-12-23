@@ -15,7 +15,7 @@ var Slider = (function() {
 		// current index for items and slides
 		current = 0,
 		// checks if the transition is in progress
-		isAnimating = false,
+		isAnimatingS = false,
 		// support for CSS transitions
 		support = Modernizr.csstransitions,
 		// transition end event
@@ -64,7 +64,7 @@ var Slider = (function() {
 
 			$navprev.on( 'click', function( event ) {
 
-				if( !isAnimating ) {
+				if( !isAnimatingS || true) {
 					
 					slide( 'prev' );
 				
@@ -75,7 +75,7 @@ var Slider = (function() {
 
 			$navnext.on( 'click', function( event ) {
 
-				if( !isAnimating ) {
+				if( !isAnimatingS || true) {
 					
 					slide( 'next' );
 				
@@ -91,13 +91,13 @@ var Slider = (function() {
 		},
 		removeTransition = function() {
 
-			isAnimating = false;
+			isAnimatingS = false;
 			$(this).removeClass('ps-move');
 
 		},
 		slide = function( dir ) {
 
-			isAnimating = true;
+			isAnimatingS = true;
 
 			var $currentItem = $items.eq( current ),
 				$currentSlide = $slides.eq( current );
@@ -150,10 +150,10 @@ var Slider = (function() {
 				$newItem.addClass( 'ps-move' ).css( 'top', 0 );
 				$newSlide.addClass( 'ps-move' ).css( 'top', 0 );
 
-				// if no CSS transitions set the isAnimating flag to false
+				// if no CSS transitions set the isAnimatingS flag to false
 				if( !support ) {
 
-					isAnimating = false;
+					isAnimatingS = false;
 
 				}
 

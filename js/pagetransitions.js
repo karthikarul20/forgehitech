@@ -6,7 +6,7 @@ var PageTransitions = (function() {
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
-		isAnimating = false,
+		isAnimatingPT = false,
 		endCurrPage = false,
 		endNextPage = false,
 		animEndEventNames = {
@@ -38,7 +38,7 @@ var PageTransitions = (function() {
 		} );
 
 		$iterate.on( 'click', function() {
-			if( isAnimating ) {
+			if( isAnimatingPT ) {
 				return false;
 			}
 			if( animcursor > 67 ) {
@@ -63,11 +63,11 @@ var PageTransitions = (function() {
             
 		var animation = (options.animation) ? options.animation : options;
 
-		if( isAnimating ) {
+		if( isAnimatingPT ) {
 			return false;
 		}
 
-		isAnimating = true;
+		isAnimatingPT = true;
 		
 		var $currPage = $pages.eq( current );
 
@@ -390,7 +390,7 @@ var PageTransitions = (function() {
 		endCurrPage = false;
 		endNextPage = false;
 		resetPage( $outpage, $inpage );
-		isAnimating = false;
+		isAnimatingPT = false;
 	}
 
 	function resetPage( $outpage, $inpage ) {

@@ -23,7 +23,8 @@
     </head>
     <body>	
         <div class="container">
-                    <header class="clearfix">
+            
+                    <header id="pageheader" class="clearfix">
                         <span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
                         <h1>Horizontal Slide Out Menu</h1>
                         <nav>
@@ -34,26 +35,27 @@
                         </nav>
                         
                     </header>	
-                    <div class="main">
+                    <div class="main" id="mainDiv">
                         <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
                             <div class="cbp-hsinner">
                                 <ul class="cbp-hsmenu">
-                                    <li onclick="PageTransitions.nextPage(null, 0)"><a href="#">Home</a></li>
+                                    <li onclick="PageTransitions.nextPage(null, 1)"><a href="#">Home</a></li>
                                     <li>
                                         <a href="#">Products</a>
                                         <ul class="cbp-hssubmenu cbp-hssub-rows">
-                                            <li><a href="#"><img src="images/7.png" alt="img07"/><span>Lovely Slurp</span></a></li>
-                                            <li><a href="#"><img src="images/8.png" alt="img08"/><span>Lemony Grappa</span></a></li>
-                                            <li><a href="#"><img src="images/9.png" alt="img09"/><span>Eggy Liquor</span></a></li>
-                                            <li><a href="#"><img src="images/10.png" alt="img10"/><span>Fresh Juice</span></a></li>
+                                            <li><a href="#"><img src="images/icons/all.png" alt="img10"/><span>All Products</span></a></li>
+                                            <li><a href="#"><img src="images/icons/home.png" alt="img10"/><span>Home Automation</span></a></li>
+                                            <li><a href="#"><img src="images/icons/curtains.png" alt="img06"/><span>Motorized Curtains</span></a></li>
+                                            <li><a href="#"><img src="images/icons/light.png" alt="img09"/><span>Lighting Control</span></a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">Services</a>
                                         <ul class="cbp-hssubmenu">
-                                            <li><a href="#"><img src="images/10.png" alt="img10"/><span>Fresh Juice</span></a></li>
-                                            <li><a href="#"><img src="images/6.png" alt="img06"/><span>Sweet Rum</span></a></li>
-                                            <li><a href="#"><img src="images/9.png" alt="img09"/><span>Eggy Liquor</span></a></li>
+                                            <li><a href="#"><img src="images/icons/all.png" alt="img10"/><span>All Services</span></a></li>
+                                            <li><a href="#"><img src="images/icons/lamp.png" alt="img10"/><span>Indoor Lighting Design</span></a></li>
+                                            <li><a href="#"><img src="images/icons/consulting.png" alt="img06"/><span>Consulting & Design Servcies</span></a></li>
+                                            <li><a href="#"><img src="images/icons/product.png" alt="img09"/><span>New Product Development</span></a></li>
                                         </ul>
                                     </li>
                                     <li onclick="PageTransitions.nextPage(null, 3)"><a href="#">About Us</a></li>
@@ -69,9 +71,77 @@
         <!-- /triggers -->
 
         <div id="pt-main" class="pt-perspective">
-            <div class="pt-page pt-page-1"><h1><span>A collection of</span><strong>Page</strong> Transitions1</h1></div>
+            <div class="pt-page pt-page-1">
+                
+               
+            </div>
             <div class="pt-page pt-page-2">Home</div>
-            <div class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> Transitions3</h1></div>
+            <div class="pt-page pt-page-3">
+                 <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+						<li>
+                            <img src="images/large/6.jpg" alt="image06"/>
+                            <div class="ei-title">
+                                <h2>Passionate</h2>
+                                <h3>Seeker</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/1.jpg" alt="image01" />
+                            <div class="ei-title">
+                                <h2>Creative</h2>
+                                <h3>Duet</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/2.jpg" alt="image02" />
+                            <div class="ei-title">
+                                <h2>Friendly</h2>
+                                <h3>Devil</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/3.jpg" alt="image03"/>
+                            <div class="ei-title">
+                                <h2>Tranquilent</h2>
+                                <h3>Compatriot</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/4.jpg" alt="image04"/>
+                            <div class="ei-title">
+                                <h2>Insecure</h2>
+                                <h3>Hussler</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/5.jpg" alt="image05"/>
+                            <div class="ei-title">
+                                <h2>Loving</h2>
+                                <h3>Rebel</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/7.jpg" alt="image07"/>
+                            <div class="ei-title">
+                                <h2>Crazy</h2>
+                                <h3>Friend</h3>
+                            </div>
+                        </li>
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+						<li><a href="#">Slide 6</a><img src="images/thumbs/6.jpg" alt="thumb06" /></li>
+                        <li><a href="#">Slide 1</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
+                        <li><a href="#">Slide 2</a><img src="images/thumbs/2.jpg" alt="thumb02" /></li>
+                        <li><a href="#">Slide 3</a><img src="images/thumbs/3.jpg" alt="thumb03" /></li>
+                        <li><a href="#">Slide 4</a><img src="images/thumbs/4.jpg" alt="thumb04" /></li>
+                        <li><a href="#">Slide 5</a><img src="images/thumbs/5.jpg" alt="thumb05" /></li>
+                        <li><a href="#">Slide 7</a><img src="images/thumbs/7.jpg" alt="thumb07" /></li>
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+                
+            </div>
             <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions4</h1></div>
             <div class="pt-page pt-page-5">
                 <section id="ps-container" class="ps-container">
@@ -158,7 +228,7 @@
                             <div style="background-image:url(images/s/3.jpg);"></div>
                         </div>
 
-                        <nav>
+                        <nav style="bottom: 220px;">
                             <a href="#" class="ps-prev" ></a>
                             <a href="#" class="ps-next" ></a>
                         </nav>
@@ -179,7 +249,7 @@
         <script src="js/pagetransitions.js"></script>
 
 
-        <script src="js/cbpHorizontalSlideOutMenu.min.js"></script>
+        <script src="js/cbpHorizontalSlideOutMenu.js"></script>
         <script>
             var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
         </script>
@@ -193,6 +263,22 @@
 			
 			});
 		</script>
-
+		<script src="js/cbpAnimatedHeader.js"></script>
+                
+                
+                
+                <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+        </script>
+        
     </body>
 </html>
