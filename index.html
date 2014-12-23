@@ -25,13 +25,13 @@
         <div class="container">
             
                     <header id="pageheader" class="clearfix">
-                        <span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
-                        <h1>Horizontal Slide Out Menu</h1>
-                        <nav>
-                            <a href="http://tympanus.net/Blueprints/VerticalTimeline/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-                            <a href="http://tympanus.net/Blueprints/ProductGridLayout/" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a>
-                            <a href="http://tympanus.net/codrops/?p=15092" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-                            <a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+                        <img src="images/logo.png" alt="logo"/>
+                        <nav style="margin-top: 7%;">
+                            <a href="#"><img onmouseover="toggelSocialIcon(this)" class="socialIcons" src="images/social_light_bg/facebook-square.png" alt="img10"/></a>
+                            <a href="#"><img onmouseover="toggelSocialIcon(this)" class="socialIcons" src="images/social_light_bg/googleplus-square.png" alt="img10"/></a>
+                            <a href="#"><img onmouseover="toggelSocialIcon(this)" class="socialIcons" src="images/social_light_bg/linkedin.png" alt="img10"/></a>
+                            <a href="#"><img onmouseover="toggelSocialIcon(this)" class="socialIcons" src="images/social_light_bg/mail.png" alt="img10"/></a>
+                            <a href="#"><img onmouseover="toggelSocialIcon(this)" class="socialIcons" src="images/social_light_bg/twitter.png" alt="img10"/></a>
                         </nav>
                         
                     </header>	
@@ -80,52 +80,52 @@
                  <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
 						<li>
-                            <img src="images/large/6.jpg" alt="image06"/>
+                            <img src="images/s/3.jpg" alt="image06"/>
                             <div class="ei-title">
                                 <h2>Passionate</h2>
                                 <h3>Seeker</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/1.jpg" alt="image01" />
+                            <img src="images/s/1.jpg" alt="image01" />
                             <div class="ei-title">
                                 <h2>Creative</h2>
                                 <h3>Duet</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/2.jpg" alt="image02" />
+                            <img src="images/s/2.jpg" alt="image02" />
                             <div class="ei-title">
                                 <h2>Friendly</h2>
                                 <h3>Devil</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/3.jpg" alt="image03"/>
+                            <img src="images/s/1.jpg" alt="image01" />
                             <div class="ei-title">
-                                <h2>Tranquilent</h2>
-                                <h3>Compatriot</h3>
+                                <h2>Creative</h2>
+                                <h3>Duet</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/4.jpg" alt="image04"/>
+                            <img src="images/s/2.jpg" alt="image02" />
                             <div class="ei-title">
-                                <h2>Insecure</h2>
-                                <h3>Hussler</h3>
+                                <h2>Friendly</h2>
+                                <h3>Devil</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/5.jpg" alt="image05"/>
+                            <img src="images/s/1.jpg" alt="image01" />
                             <div class="ei-title">
-                                <h2>Loving</h2>
-                                <h3>Rebel</h3>
+                                <h2>Creative</h2>
+                                <h3>Duet</h3>
                             </div>
                         </li>
                         <li>
-                            <img src="images/large/7.jpg" alt="image07"/>
+                            <img src="images/s/2.jpg" alt="image02" />
                             <div class="ei-title">
-                                <h2>Crazy</h2>
-                                <h3>Friend</h3>
+                                <h2>Friendly</h2>
+                                <h3>Devil</h3>
                             </div>
                         </li>
                     </ul><!-- ei-slider-large -->
@@ -278,6 +278,21 @@
 					titlesFactor		: 0
                 });
             });
+        </script>
+        
+        
+        <script>
+            function toggelSocialIcon(ele)
+            {
+                if(ele.src.indexOf("social_light_bg")!==-1)
+                {
+                    ele.src=ele.src.replace("social_light_bg", "social_dark_bg");
+                }
+                else
+                {
+                    ele.src=ele.src.replace("social_dark_bg", "social_light_bg");
+                }
+            }
         </script>
         
     </body>

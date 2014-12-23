@@ -38,7 +38,8 @@ a:hover {
 	width: 90%;
 	max-width: 69em;
 	margin: 0 auto;
-	padding: 2.875em 1.875em 1.875em;
+        padding: 0.5em 1.875em 0.2em;
+	/*padding: 2.875em 1.875em 1.875em;*/
 }
 
 .container > header h1 {
@@ -90,7 +91,7 @@ a:hover {
 	float: right;
 	text-align: center;
 }
-
+/*
 .container > header nav a {
 	display: inline-block;
 	position: relative;
@@ -120,7 +121,7 @@ a:hover {
 
 .container > header nav a:hover {
 	background: #47a3da;
-}
+}*/
 
 .bp-icon:after {
 	font-family: 'bpicons';
@@ -147,7 +148,7 @@ a:hover {
 .container > header nav a:hover:after {
 	color: #fff;
 }
-
+/*
 .bp-icon-next:after {
 	content: "\e000";
 }
@@ -162,7 +163,7 @@ a:hover {
 }
 .bp-icon-prev:after {
 	content: "\e004";
-}
+}*/
 
 @media screen and (max-width: 55em) {
 
@@ -183,4 +184,13 @@ a:hover {
 	.container > header > span {
 		text-indent: 30px;
 	}
+}
+
+
+
+
+
+img.socialIcons {
+width: 50px;
+cursor: pointer;
 }

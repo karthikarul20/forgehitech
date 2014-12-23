@@ -12,7 +12,7 @@ var cbpAnimatedHeader = (function() {
 
 	var docElem = document.documentElement,
 		didScroll = false,
-		changeHeaderOn = 215;
+		changeHeaderOn = 125;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -31,6 +31,7 @@ var cbpAnimatedHeader = (function() {
                         $("#mainDiv").css("position","fixed");
                         $("#mainDiv").css("z-index","100");
                         $("#mainDiv").css("top","0px");
+                        $("#ei-slider").css("margin-top","46px");
                         
 //            classie.add(header, 'cbp-af-header-shrink');
                         
@@ -41,6 +42,7 @@ var cbpAnimatedHeader = (function() {
                         $("#mainDiv").css("position","");
                         $("#mainDiv").css("z-index","");
                         $("#mainDiv").css("top","");
+                        $("#ei-slider").css("margin-top","");
 //            classie.remove(header, 'cbp-af-header-shrink');
 		}
 		didScroll = false;
