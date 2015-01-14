@@ -8,11 +8,12 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+var scrollFlag=0;
 var cbpAnimatedHeader = (function() {
 
 	var docElem = document.documentElement,
 		didScroll = false,
-		changeHeaderOn = 125;
+		changeHeaderOn = $(".container").height();
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -26,23 +27,27 @@ var cbpAnimatedHeader = (function() {
 	function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
+                    if(scrollFlag)
+                    {
+                        scrollFlag=0;
+                        $("#mainDiv").hide();
+                    }
 //			$("#pageheader").hide();
                         $("#mainDiv").css("width","100%");
                         $("#mainDiv").css("position","fixed");
                         $("#mainDiv").css("z-index","100");
                         $("#mainDiv").css("top","0px");
-                        $("#ei-slider").css("margin-top","46px");
-                        
+                        $("#mainDiv").slideDown(1000);                        
 //            classie.add(header, 'cbp-af-header-shrink');
                         
 		}
 		else {
+                        scrollFlag=1;
 //			$("#pageheader").show();
                         $("#mainDiv").css("width","");
                         $("#mainDiv").css("position","");
                         $("#mainDiv").css("z-index","");
                         $("#mainDiv").css("top","");
-                        $("#ei-slider").css("margin-top","");
 //            classie.remove(header, 'cbp-af-header-shrink');
 		}
 		didScroll = false;

@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="css/default.css" />
         <link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link rel="stylesheet" type="text/css" href="css/animations.css" />
         
         
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -39,18 +38,18 @@
                         <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
                             <div class="cbp-hsinner">
                                 <ul class="cbp-hsmenu">
-                                    <li onclick="PageTransitions.nextPage(null, 1)"><a href="#">Home</a></li>
-                                    <li>
-                                        <a href="#">Products</a>
+                                    <li onclick="showPage('homePage')"><a href="#">Home</a></li>
+                                    <li onclick="showPage('product')">
+                                        <a id="Products">Products</a>
                                         <ul class="cbp-hssubmenu cbp-hssub-rows">
-                                            <li><a href="#"><img src="images/icons/all.png" alt="img10"/><span>All Products</span></a></li>
+                                            <li><a onclick="showPage('Products')"><img src="images/icons/all.png" alt="img10"/><span>All Products</span></a></li>
                                             <li><a href="#"><img src="images/icons/home.png" alt="img10"/><span>Home Automation</span></a></li>
                                             <li><a href="#"><img src="images/icons/curtains.png" alt="img06"/><span>Motorized Curtains</span></a></li>
                                             <li><a href="#"><img src="images/icons/light.png" alt="img09"/><span>Lighting Control</span></a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="#">Services</a>
+                                    <li onclick="showPage('service')">
+                                        <a>Services</a>
                                         <ul class="cbp-hssubmenu">
                                             <li><a href="#"><img src="images/icons/all.png" alt="img10"/><span>All Services</span></a></li>
                                             <li><a href="#"><img src="images/icons/lamp.png" alt="img10"/><span>Indoor Lighting Design</span></a></li>
@@ -58,8 +57,8 @@
                                             <li><a href="#"><img src="images/icons/product.png" alt="img09"/><span>New Product Development</span></a></li>
                                         </ul>
                                     </li>
-                                    <li onclick="PageTransitions.nextPage(null, 3)"><a href="#">About Us</a></li>
-                                    <li onclick="PageTransitions.nextPage(null, 4)"><a href="#">Contact Us</a></li>
+                                    <li onclick="showPage('faq')"><a href="#">FAQ</a></li>
+                                    <li onclick="showPage('contact_us')"><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -71,12 +70,7 @@
         <!-- /triggers -->
 
         <div id="pt-main" class="pt-perspective">
-            <div class="pt-page pt-page-1">
-                
-               
-            </div>
-            <div class="pt-page pt-page-2">Home</div>
-            <div class="pt-page pt-page-3">
+            <div class="page" id="homePage" style="display: block;">
                  <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
 						<li>
@@ -140,113 +134,127 @@
                         <li><a href="#">Slide 7</a><img src="images/thumbs/7.jpg" alt="thumb07" /></li>
                     </ul><!-- ei-slider-thumbs -->
                 </div><!-- ei-slider -->
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <div class="innerDivHeading">
+                            About The Best Designs
+                        </div>
+                        <div class="innerDivDesc">
+                            The Best Designs is a curation of the best of web design and their designers, featured for design excellence. Thousands of designers, students and business professionals visit regularly to see new work, upcoming trends or design inspiration. If you are looking for a talented web designer for your project, you can browse through the Designer Directory. These freelance designers and agencies have had at least one design featured here, which may help fine-tune your search for the best candidate. For designers and developers looking for employment, or for agencies posting jobs, please see our Design & Development Jobs, also curated for quality.
+                        </div>
+                        
+                    </div>
+                    <div class="innerDiv">
+                        <div class="innerDivHeading">
+                            About The Best Designs
+                        </div>
+                        <div class="innerDivDesc">
+                            The Best Designs is a curation of the best of web design and their designers, featured for design excellence. Thousands of designers, students and business professionals visit regularly to see new work, upcoming trends or design inspiration. If you are looking for a talented web designer for your project, you can browse through the Designer Directory. These freelance designers and agencies have had at least one design featured here, which may help fine-tune your search for the best candidate. For designers and developers looking for employment, or for agencies posting jobs, please see our Design & Development Jobs, also curated for quality.
+                        </div>
+                        
+                    </div>
+                    <div class="innerDiv">
+                        <div class="innerDivHeading">
+                            About The Best Designs
+                        </div>
+                        <div class="innerDivDesc">
+                            The Best Designs is a curation of the best of web design and their designers, featured for design excellence. Thousands of designers, students and business professionals visit regularly to see new work, upcoming trends or design inspiration. If you are looking for a talented web designer for your project, you can browse through the Designer Directory. These freelance designers and agencies have had at least one design featured here, which may help fine-tune your search for the best candidate. For designers and developers looking for employment, or for agencies posting jobs, please see our Design & Development Jobs, also curated for quality.
+                        </div>
+                        
+                    </div>
+                    
+                </div>
                 
             </div>
-            <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions4</h1></div>
-            <div class="pt-page pt-page-5">
-                <section id="ps-container" class="ps-container">
-
-
-                    <div class="ps-contentwrapper">
-
-                        <div class="ps-content">
-                                <h2>Home Automation System</h2>
-                                <div>
-                                    Home Automation enables the automatic control of commonly used elements such as lighting, security, temperature, music and other home devices in a manner that is personalized to the needs of each family. Automated homes are referred to as "Smart Homes".Making your home into a smart home can mean a lot of things.
-                                    <ul>
-                                        <li>
-                                            Convenience: An automated home is about the convenience of saving your time and effort by having your home automatically do routine functions such as watering your grass (but only if it has not rained recently) or turning off all lights, setting the thermostat to economy mode and arming the security system when you retire for the night. Its about enjoying home theater time by having the lights dim, curtains close, TV and DVD player turn on and popcorn popper start... all with the touch of just one button.
-                                        </li>
-                                        <li>
-                                            Security: Home automation is about the security you have knowing that you can look in on your home remotely from anywhere in the world, or that your home will phone you if anything is a miss, or that a fire
-                                            will alert your home to wake you, shut down the gas and ventilation system and turn on a lighting path for your escape.
-                                        </li>
-                                        <li>
-                                            Savings: Its about the energy savings you will enjoy by assigning your home the responsibility of regulating the operation of lights, water heater, HVAC system, entertainment components, appliances and
-                                            irrigation system so these devices are on only when needed. The benefits of an automated home are only limited by your imagination.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ps-content">
-                                <h2>Lighting Control</h2>
-                                <div>
-                                        A lighting control  system  enables  one-touch  control  of  all  lights  throughout  the  house  using  mood-based  scenes which can be created resulting in convenience and elegance. With the touch of a button, you can turn lights on or off, dim lights, control fans and more from anywhere in the house. VR Tech designs and installs wired and wireless lighting control  systems  personalized  to  the  needs  of  each  family.  Lighting  control  systems  can  be  programmed easily based on time of day, motion, security, mood, and many other factors. For example, with a lighting control system you can program your lights to automatically turn on when you enter the house or turn off during nights or when you leave the house. You can program lighting scenes consistent with a relaxing evening, a late night party or a holiday dinner. Lighting control systems do not take away from your ability to control individual lights the way you have always done.                                    <ul>
-                                        The following are some examples of the benefits of a lighting control system.
-                                        <li>
-                                            Welcome Home: Return  to  your home that  has  a  pathway  of  light  from  the  garage  to  the  kitchen providing security and convenience.
-                                        </li>
-                                        <li>
-                                            Kitchen and Dining Room: Create scenes for the different tasks such as dining, cooking and cleaning.
-                                        </li>
-                                        <li>
-                                            Master Bedroom: Control  zones  of  lights  from  the  bedside  to  turn  ON  and  OFF  lights  outside,downstairs or throughout the home.
-                                        </li>
-                                        <li>
-                                            Landscape and Garden: Schedule when the garden  path  lights turn ON  and OFF,  or  combine  all the outdoor lights to activate at once for security.
-                                        </li>
-                                        <li>
-                                            Staircase and Hallways: Ensure safety by  turning  on  lights  at  appropriate  lighting  levels  throughout the day and night.
-                                        </li>
-                                        <li>
-                                            Living Room: Add  elegance  and  intimacy.  Lighting  is  one  of  the  most  powerful  methods Interior Designers use to change moods in a room.
-                                        </li>
-                                        <li>
-                                            Family Room or Great Room: Select a lighting scene for one person to read a good book, or the entire family to celebrate a birthday party.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ps-content">
-                                <h2>Motorized Curtains</h2>
-                                <div>
-                                    Motorized curtains can be of immense value in the following ways
-                                    <ul>
-                                        <li>
-                                            Lighting Moods: Contribute  to  providing  the  right  blend  of  natural  lighting  and  indoor  lighting;  for example, curtains can automatically be opened in the morning to allow light into the home, closed during the day hours to conserve energy, opened in the evening hours to enjoy views or allow for fresh air and then closed again at  night for  privacy. Automation  of  curtains makes the  opening  and  closing  of  curtains  convenient  and  enables home owners to enjoy the benefits of natural lighting.
-                                        </li>
-                                        <li>
-                                            Energy Savings: Automatic closing of curtains during warm days can keep indoors cool and contribute to energy savings
-                                        </li>
-                                        <li>
-                                            Preservation of Interiors: Motorized  curtains  enable  protection  of  expensive  interiors  by  blocking harmful sun's rays during the day time.
-                                        </li>
-                                        <li>
-                                            Privacy: Motorized curtains can be integrated with home automation systems to automatically close at nights to enable privacy.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                    </div><!-- /ps-contentwrapper -->
-
-                    <div class="ps-slidewrapper">
-
-                        <div class="ps-slides">
-                            <div style="background-image:url(images/s/1.jpg);"></div>
-                            <div style="background-image:url(images/s/2.jpg);"></div>
-                            <div style="background-image:url(images/s/3.jpg);"></div>
-                        </div>
-
-                        <nav style="bottom: 220px;">
-                            <a href="#" class="ps-prev" ></a>
-                            <a href="#" class="ps-next" ></a>
-                        </nav>
-
-                    </div><!-- /ps-slidewrapper -->
-
-                </section><!-- /ps-container -->
+            <div class="page" id="product" style="display: none;">
+                 products
             </div>
-            <div class="pt-page pt-page-6">Contact Us</div>
+            <div class="page" id="service" style="display: none;">
+                 services
+            </div>
+            <div class="page" id="faq" style="display: none;">
+                <div class="outerFaqDiv">
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">1. Who is eligible to be issued with an e-Visa?</div>
+                        <div class="faqAnswer">Nationals from the countries listed here are eligible for e-Visa. </div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">2. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">3. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">4. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">5. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">6. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">7. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                    <div class="innerFaqDiv">
+                        <div class="faqQuestion">8. What is this alternate site collection service all about?</div>
+                        <div class="faqAnswer">Applicants granted SPR under the AIP Scheme are eligible to apply for Singapore Citizenship after 2 years of permanent residence in Singapore.</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="contact_us" style="display: none;">
+                <div class="outerContactDiv">
+                    <div class="firstRowContactDiv">
+                        <div style="width: 100%;text-align: center;padding: 4%;font-size: 15pt;">
+                            We are happy to hear from you!
+                        </div>
+                        <div style="float: left;margin-top: 2%;width: 50%;text-align: center;">
+                            <input class="contactUsInput" type="text" placeholder="Name"/>
+                        </div>
+                        <div style="float: right;margin-top: 2%;width: 50%;text-align: center;">
+                            <input class="contactUsInput" type="text" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="secondRowContactDiv">
+                        <textarea style="border: 2px solid #47a3da;border-radius: 5px;width: 90%;height: 400px;font-size: 12pt;padding: 20px;color: #47a3da;"></textarea>
+                    </div>
+                    <div class="thirdRowContactDiv">
+                        <div style="width: 30%;padding: 1%;background-color: #47a3da;color: white;margin: 0 auto;">Send</div>
+                    </div>
+                                        
+                </div>
+            </div>
+            
         </div>
-
-        <div class="pt-message">
-            <p>Your browser does not support CSS animations.</p>
+        <div style="bottom: 0;height: 100px;background-color: #47a3da;color: white;padding-top: 2%;text-align: center;font-weight: 100;">
+<!--            <table style="width: 100%;height: 100%;text-align: center;font-size: 15pt;font-weight: normal;">
+                <tr>
+                    <td>ForgeHiTech 2015</td>
+                    <td>Join Us</td>
+                    <td>Contact Us</td>
+                    <td>FAQ</td>
+                    <td>Terms & Conditions</td>
+                </tr>
+            </table>-->
+© 2015 FORGEHITECH. ALL RIGHTS RESERVED.
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/jquery.dlmenu.js"></script>
-        <script src="js/pagetransitions.js"></script>
 
 
         <script src="js/cbpHorizontalSlideOutMenu.js"></script>
@@ -254,15 +262,7 @@
             var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
         </script>
         
-        
-		<script type="text/javascript" src="js/slider.js"></script>
-		<script type="text/javascript">
-			$(function() {
 
-				Slider.init();
-			
-			});
-		</script>
 		<script src="js/cbpAnimatedHeader.js"></script>
                 
                 
@@ -277,6 +277,14 @@
 					slideshow_interval	: 3000,
 					titlesFactor		: 0
                 });
+                
+                
+                $(".faqQuestion").on("click", function (){
+                    $(".faqAnswer").slideUp();
+                    $(".faqQuestion").css("font-weight","normal");
+                    $(this).css("font-weight","bold");
+                    $(this.nextElementSibling).slideDown(500);
+                })
             });
         </script>
         
@@ -292,6 +300,14 @@
                 {
                     ele.src=ele.src.replace("social_dark_bg", "social_light_bg");
                 }
+            }
+            
+            
+            
+            function showPage(parentId, id)
+            {
+                $(".page").hide();
+                $("#"+parentId).show();
             }
         </script>
         
