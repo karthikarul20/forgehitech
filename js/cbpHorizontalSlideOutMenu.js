@@ -87,14 +87,16 @@
 			
 			var self = this;
 
-			Array.prototype.slice.call( this.menuItems ).forEach( function( el, i ) {
-				var trigger = el.querySelector( 'a' );
-				if( self.touch ) {
-					trigger.addEventListener( 'touchstart', function( ev ) { self._openMenu( this, ev ); } );
-				}
-				else {
-					trigger.addEventListener( 'mouseover', function( ev ) { self._openMenu( this, ev ); } );	
-				}
+			Array.prototype.slice.call( this.menuItems ).forEach( function( ele, j ) {
+				var triggers = ele.querySelectorAll( 'a' );
+                                for (var index = 0; index < triggers.length; ++index) {
+                                    if( self.touch ) {
+                                            triggers[index].addEventListener( 'click', function( ev ) { self._openMenu( this, ev ); } );
+                                    }
+                                    else {
+                                            triggers[index].addEventListener( 'click', function( ev ) { self._openMenu( this, ev ); } );	
+                                    }
+                                }
 			} );
 			
 			window.addEventListener( 'resize', function( ev ) { self._resizeHandler(); } );

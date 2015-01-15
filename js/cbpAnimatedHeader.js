@@ -37,7 +37,7 @@ var cbpAnimatedHeader = (function() {
                         $("#mainDiv").css("position","fixed");
                         $("#mainDiv").css("z-index","100");
                         $("#mainDiv").css("top","0px");
-                        $("#mainDiv").slideDown(1000);                        
+                        $("#mainDiv").slideDown(500);                        
 //            classie.add(header, 'cbp-af-header-shrink');
                         
 		}
