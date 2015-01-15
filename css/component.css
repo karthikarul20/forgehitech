@@ -220,6 +220,25 @@
 }
 
 @media screen and (max-width: 51.4375em){
+        #mainDiv{
+            position: static !important;
+        }
+        
+        .outerDiv {
+            display: block;
+        }
+    
+        .contactUsDiv {
+            margin-top: 2%;
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        
+        .social{
+            padding: 2%;
+        }
+        
 	.cbp-hsmenu-wrapper {
 		font-size: 100%;
 	}

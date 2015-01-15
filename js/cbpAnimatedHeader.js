@@ -26,7 +26,7 @@ var cbpAnimatedHeader = (function() {
 
 	function scrollPage() {
 		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
+		if ( sy >= changeHeaderOn  && $(window).width()>900) {
                     if(scrollFlag)
                     {
                         scrollFlag=0;
