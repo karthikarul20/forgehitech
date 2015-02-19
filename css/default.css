@@ -283,6 +283,7 @@ color: white;
 margin: 0 auto;
 cursor: pointer;
 border-radius: 10px;
+margin-top: 2%;
 }
 
 
@@ -302,13 +303,13 @@ color: #47a3da;
 
 
 
-div#ps_title {
+div.ps_title {
 padding: 3%;
 font-size: 18pt;
 text-align: center;
 }
 
-div#ps_desc {
+div.ps_desc {
 text-align: justify;
 padding: 1% 15% 1% 15%;
 font-size: 13pt;

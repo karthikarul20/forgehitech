@@ -234,6 +234,9 @@
             float: none;
             text-align: center;
         }
+        .contactUsInput {
+            width: 95%;
+        }
         
         .social{
             padding: 2%;
