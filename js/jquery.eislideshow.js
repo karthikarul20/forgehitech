@@ -108,7 +108,7 @@
 			
 			// preload images
 			// add loading status
-			this.$loading		= $('<div class="ei-slider-loading">Loading</div>').prependTo( _self.$el );
+			this.$loading		= $('<div class="ei-slider-loading">Loading...</div>').prependTo( _self.$el );
 			
 			$.when( this._preloadImages() ).done( function() {
 				
@@ -185,8 +185,7 @@
 				$img.css({
 					width		: imgDim.width,
 					height		: imgDim.height,
-					marginLeft	: imgDim.left,
-					marginTop	: imgDim.top
+					marginLeft	: imgDim.left
 				});
 				
 			});
