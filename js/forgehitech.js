@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 
+$(document).keyup(function (e) {
 
+    if (e.keyCode == 27) {
+        $('#facebook_popup').popup('hide');
+    }   // escape key maps to keycode `27`
+});
 $(function () {
     $('#ei-slider').eislideshow({
         animation: 'center',
@@ -15,10 +20,73 @@ $(function () {
     loadCSVContents();
     initializeEmail();
     
+    
+    $('#facebook_popup').popup({transition: 'all 0.3s'});
+    $('#facebook_popup').popup('show');
     $("#homePage>div").height($(window).height());
     $("#homePage>div>div").css("margin-top",$(window).height()/2 + "px");
     
+    
+    
+    //initializing facebook
+    
+    
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1415553022100459',
+            xfbml: true,
+            version: 'v2.3'
+        });
+//        constructFacebookFeeds();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
 });
+
+
+
+function constructFacebookFeeds()
+{
+//    var FEED_URL = "https://www.facebook.com/feeds/page.php?format=rss20&id=1430802810470529";
+//419634484771732
+
+//                content += '<div class="fb-like-box" data-href="https://www.facebook.com/VirukshamGroups" data-width="500" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>';
+
+//    var FEED_URL = "https://www.wallflux.com/feed/419634484771732";
+    
+//    $.ajax({
+//        url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(FEED_URL),
+//        dataType: 'json',
+//        async: true,
+//        success: function (data) {
+//            if (data.responseData.feed && data.responseData.feed.entries) {
+//                var content = "";
+//
+//                content += '<div class="fb-like-box" data-href="https://www.facebook.com/VirukshamGroups" data-width="500" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>';
+//                content += '<div>&nbsp;</div>';
+//                for (i = 0; i < data.responseData.feed.entries.length; i++)
+//                {
+//                    var url = data.responseData.feed.entries[i].link;
+//                    content += '<div class="fb-post" data-href="' + url + '" data-width="500">';
+//                    content += '</div>';
+//                    content += '<div>&nbsp;</div>';
+//                }
+//            }
+//            $("#feedsDiv").html(content);
+//        }
+//    });
+}
+
 
 
 function is_email(email) {
